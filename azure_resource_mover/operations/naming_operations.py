@@ -8,11 +8,11 @@ import requests
 
 load_dotenv()
 
-BASE_URL = "https://wapp-azurenamingtool-wus.azurewebsites.net/api"
-TENANT_ID = "cbca83b8-a971-43a8-9ab3-ce2599ff12ea"
+BASE_URL = os.getenv('BASE_URL')
+TENANT_ID = os.getenv('TENANT_ID')
 CLIENT_ID = os.getenv('AZURE_CLIENT_ID')
 CLIENT_SECRET = os.getenv('AZURE_CLIENT_SECRET')
-RESOURCE_ID = "41aee129-4726-4cc1-b8de-374db5917da1"
+RESOURCE_ID = os.getenv('RESOURCE_ID')
 API_KEY = os.getenv('AZURE_NAMING_TOOL_API_KEY')
 
 DEBUG = False  # Set this to True when you need detailed logs
