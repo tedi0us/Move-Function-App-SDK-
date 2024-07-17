@@ -1,2 +1,17 @@
-azure_resource_mover/.env
-./venv
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# IDE specific files (optional, but often helpful)
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
